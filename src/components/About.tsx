@@ -44,7 +44,7 @@ export default function About() {
               <div className="relative w-full h-full rounded-[3rem] rounded-bl-xl overflow-hidden z-10 border-4 border-white shadow-xl">
                 {/* Substitua a imagem abaixo pela sua foto salvando como "profile.jpg" na pasta "public" */}
                 <Image
-                  src="/profile.jpg"
+                  src="/profile.png"
                   alt="Rafael Alves"
                   fill
                   className="object-cover"
@@ -66,8 +66,7 @@ export default function About() {
             </h3>
 
             <p className="text-base md:text-lg text-gray-700 leading-relaxed font-medium">
-              Sou Mestre em Engenharia Eletrônica e Computação formado pela Universidade Católica de Pelotas (UCPEL). Tenho experiência profissional como Analista de Desenvolvimento de Sistemas e também atuo como desenvolvedor AI Freelancer.
-            </p>
+              Engenheiro de IA focado no desenvolvimento de soluções ponta a ponta com Agentes de IA. Mestre em Engenharia Eletrônica e Computação pela UCPel, com pesquisa em Aprendizado de Máquina e Análise Exploratória de Dados, e Engenheiro de Computação pela UFPel, com formação em Robótica. Possuo experiência profissional como Analista de Desenvolvimento de Sistemas, atuando no desenvolvimento de aplicações com Python, PostgreSQL, Flutter e Dart.            </p>
           </motion.div>
 
         </div>
