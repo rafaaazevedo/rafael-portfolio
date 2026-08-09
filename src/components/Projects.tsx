@@ -23,7 +23,7 @@ export default function Projects() {
         "Assistente inteligente para atendimento clínico, utilizando IA generativa, RAG e integração com serviços em nuvem para automatizar o atendimento inicial, qualificação e agendamento.",
       color: "bg-[#f1f3f5]",
       image: "/images/chat-leadflow-ai.png",
-      site: "leadflow-ai-mocha-eight.vercel.app",
+      site: "https://leadflow-ai-mocha-eight.vercel.app/",
       github: "https://github.com/rafaaazevedo/leadflow-ai-showcase",
     },
     {
