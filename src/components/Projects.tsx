@@ -12,6 +12,7 @@ export default function Projects() {
         "Landing page responsiva desenvolvida para apresentar uma cafeteria, com foco em design, navegação e experiência do usuário.",
       color: "bg-[#f1f3f5]",
       image: "/images/cafe-oslo.png",
+      site: "https://projetocafeteriaoslo.netlify.app/",
       github: "https://github.com/rafaaazevedo/Projeto-Cafeteria",
       
     },
@@ -22,6 +23,7 @@ export default function Projects() {
         "Assistente inteligente para atendimento clínico, utilizando IA generativa, RAG e integração com serviços em nuvem para automatizar o atendimento inicial, qualificação e agendamento.",
       color: "bg-[#f1f3f5]",
       image: "/images/chat-leadflow-ai.png",
+      site: "leadflow-ai-mocha-eight.vercel.app",
       github: "https://github.com/rafaaazevedo/leadflow-ai-showcase",
     },
     {
@@ -31,6 +33,7 @@ export default function Projects() {
         "Sistema multiagentes desenvolvido para automatizar o atendimento financeiro, utilizando agentes especializados e fluxos de automação para classificação e encaminhamento de solicitações.",
       color: "bg-[#f1f3f5]",
       image: "/images/automacao-multiagente.png",
+      site: null,
       github: null,
     },
     {
@@ -40,6 +43,7 @@ export default function Projects() {
       "Aplicativo mobile desenvolvido com Dart e Flutter para monitoramento remoto de pacientes, integrado a uma arquitetura IoT para coleta e visualização de dados.",
       color: "bg-[#f1f3f5]",
       image: "/images/monicare-sensors-data.png",
+      site: null,
       github: "https://github.com/rafaaazevedo/Health_Monitor",
     }
   ];
@@ -97,22 +101,37 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                {project.github ? (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#343a40] hover:text-gray-500 transition-colors"
-                  >
-                    GitHub
-                    <span>↗</span>
-                  </a>
-                ) : (
-                  <span className="text-sm text-gray-400">
-                    Projeto privado
-                  </span>
-                )}
-              </div>
+                <div className="flex items-center gap-5">
+                  {project.site && (
+                    <a
+                      href={project.site}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-[#343a40] hover:text-gray-500 transition-colors"
+                    >
+                      Site
+                      <span>↗</span>
+                    </a>
+                  )}
+
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-[#343a40] hover:text-gray-500 transition-colors"
+                    >
+                      GitHub
+                      <span>↗</span>
+                    </a>
+                  )}
+
+                  {!project.site && !project.github && (
+                    <span className="text-sm text-gray-400">
+                      Projeto privado
+                    </span>
+                  )}
+                </div>
             </motion.div>
           ))}
         </div>
