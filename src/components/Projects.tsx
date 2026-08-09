@@ -8,27 +8,39 @@ export default function Projects() {
     {
       title: "Café Oslo",
       category: "Landpage",
+      description:
+        "Landing page responsiva desenvolvida para apresentar uma cafeteria, com foco em design, navegação e experiência do usuário.",
       color: "bg-[#f1f3f5]",
       image: "/images/cafe-oslo.png",
+      github: "https://github.com/rafaaazevedo/Projeto-Cafeteria",
       
     },
     {
       title: "LeadFlow AI",
       category: "Agente de IA",
+      description:
+        "Assistente inteligente para atendimento clínico, utilizando IA generativa, RAG e integração com serviços em nuvem para automatizar o atendimento inicial, qualificação e agendamento.",
       color: "bg-[#f1f3f5]",
       image: "/images/chat-leadflow-ai.png",
+      github: "https://github.com/rafaaazevedo/leadflow-ai-showcase",
     },
     {
       title: "Automação no Setor de Consultoria Financeira",
       category: "Multiagente de IA e automações com n8n",
+      description:
+        "Sistema multiagentes desenvolvido para automatizar o atendimento financeiro, utilizando agentes especializados e fluxos de automação para classificação e encaminhamento de solicitações.",
       color: "bg-[#f1f3f5]",
       image: "/images/automacao-multiagente.png",
+      github: null,
     },
     {
       title: "MoniCare: Monitoramento Remoto de Pacientes",
       category: "Aplicativo mobile",
+       description:
+      "Aplicativo mobile desenvolvido com Dart e Flutter para monitoramento remoto de pacientes, integrado a uma arquitetura IoT para coleta e visualização de dados.",
       color: "bg-[#f1f3f5]",
       image: "/images/monicare-sensors-data.png",
+      github: "https://github.com/rafaaazevedo/Health_Monitor",
     }
   ];
 
@@ -73,8 +85,33 @@ export default function Projects() {
                 )}
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#343a40] mb-1">{project.title}</h3>
-                <p className="text-sm text-gray-500 font-medium">{project.category}</p>
+                <h3 className="text-xl font-bold text-[#343a40] mb-1">
+                  {project.title}
+                </h3>
+
+                <p className="text-sm text-gray-500 font-medium mb-3">
+                  {project.category}
+                </p>
+
+                <p className="text-sm text-gray-600 leading-relaxed mb-5">
+                  {project.description}
+                </p>
+
+                {project.github ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#343a40] hover:text-gray-500 transition-colors"
+                  >
+                    GitHub
+                    <span>↗</span>
+                  </a>
+                ) : (
+                  <span className="text-sm text-gray-400">
+                    Projeto privado
+                  </span>
+                )}
               </div>
             </motion.div>
           ))}
