@@ -34,7 +34,7 @@ export default function Projects() {
       color: "bg-[#f1f3f5]",
       image: "/images/automacao-multiagente.png",
       site: null,
-      github: null,
+      github: "https://github.com/rafaaazevedo/ai-multiagent-workflow",
     },
     {
       title: "MoniCare: Monitoramento Remoto de Pacientes",

@@ -34,20 +34,30 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Right Column - Image/Shape Placeholder */}
+        {/* Right Column - Image with decorative shapes */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="order-1 md:order-2 flex justify-center md:justify-end"
         >
-          <div className="relative w-full max-w-lg aspect-[3/4]">
-            <Image
-              src="/robot.png"
-              alt="Rafael Alves"
-              fill
-              className="object-contain"
-            />
+          <div className="relative w-72 h-72 md:w-96 md:h-96">
+            <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#5f3dc4]"></div>
+            <div className="absolute top-1/2 -left-8 w-6 h-6 bg-[#48e5c2]"></div>
+            <div className="absolute -bottom-8 right-12 w-10 h-10 bg-[#5f3dc4]"></div>
+            <div className="absolute -bottom-2 right-4 w-6 h-6 bg-[#48e5c2]"></div>
+            <div className="absolute -top-6 left-12 w-4 h-4 bg-[#5f3dc4]"></div>
+
+            <div className="absolute top-8 left-8 right-0 bottom-0 bg-[#5f3dc4] rounded-[3rem] rounded-bl-xl z-0"></div>
+
+            <div className="relative w-full h-full rounded-[3rem] rounded-bl-xl overflow-hidden z-10 border-4 border-white shadow-xl">
+              <Image
+                src="/profile.png"
+                alt="Rafael Alves"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </motion.div>
 

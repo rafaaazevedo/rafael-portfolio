@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaPython, FaProjectDiagram } from "react-icons/fa";
+import { FaPython, FaProjectDiagram, FaGithub } from "react-icons/fa";
 import { SiFlutter, SiFastapi, SiNextdotjs, SiPostgresql, SiDocker, SiGithubactions,} from "react-icons/si";
 
 import { FaAws } from "react-icons/fa";
@@ -10,14 +10,15 @@ import { GiBrain } from "react-icons/gi";
 const skills = [
   { name: "Python",        icon: <FaPython size={52} color="#3776AB" /> },
   { name: "Flutter",       icon: <SiFlutter size={52} color="#54C5F8" /> },
-  { name: "FastAPI",       icon: <SiFastapi size={52} color="#009688" /> },
+  // { name: "FastAPI",       icon: <SiFastapi size={52} color="#009688" /> },
   { name: "Next.js",       icon: <SiNextdotjs size={52} color="#000000" /> },
   { name: "PostgreSQL",     icon: <SiPostgresql size={52} color="#336791" /> },
   { name: "Docker",         icon: <SiDocker size={40} color="#2496ED" /> },  
-  { name: "GitHub Actions", icon: <SiGithubactions size={40} color="#000000" /> },
+  // { name: "GitHub Actions", icon: <SiGithubactions size={40} color="#000000" /> },
+  { name: "GitHub Actions", icon: <FaGithub size={40} color="#000000" /> },
   { name: "AWS", icon: <FaAws size={40} color="#FF9900" /> },
-  { name: "Generative AI", icon: <GiBrain size={52} color="#9c59d1" /> },
-  { name: "RAG",           icon: <FaProjectDiagram size={52} color="#e06c13" /> },
+  // { name: "Generative AI", icon: <GiBrain size={52} color="#9c59d1" /> },
+  // { name: "RAG",           icon: <FaProjectDiagram size={52} color="#e06c13" /> },
 ];
 
 export default function Skills() {
